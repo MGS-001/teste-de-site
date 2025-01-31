@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/*Versão Mobile*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root{
+    --cor01:#FC6F2B;
+    --cor02:#FCB22B;
+
+    --fontpadrao:'Oswald';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(42, 40, 40, 0.956);
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    background: url('../imagem/cheeseburger.png') no-repeat top;
+    background-size: cover;
+}
+
+#formulario{
+    display: block;
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+    color: var(--cor02);
+}
+
+nav{
+    background-color: var(--cor01);
+}
+
+#itens{
+    display: none;
+}
+
+nav a{
+    padding: 5px;
+    display: block;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    border: 2px solid;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: #FCB22B;
+}
+
