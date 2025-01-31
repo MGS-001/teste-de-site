@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /*Versão Mobile*/
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap');
 
 :root{
     --cor01:#FC6F2B;
-    --cor02:#FCB22B;
+    --cor02:#fcb32ba2;
 
-    --fontpadrao:'Oswald';
+    --fontpadrao: 'Gwendolyn';
 }
 
 *{
@@ -16,45 +16,83 @@
 }
 
 body{
-    height: 100vh;
     width: 100vw;
-    background-color: rgba(42, 40, 40, 0.956);
+    height: 100vh;
+    background-color: rgba(73, 71, 71, 0.956);
+}
+
+nav img{
+    height: 3vh;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 18px;
+}
+
+nav img:hover{
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+
+nav{
+    text-align: right;
 }
 
 section{
     width: 100vw;
     height: 100vh;
-    background: url('../imagem/cheeseburger.png') no-repeat top;
+    background:url('../imagem/hamburguer.jpg') no-repeat;
     background-size: cover;
+    background-position: left bottom;
 }
 
-#formulario{
-    display: block;
-    font-size: 2em;
+h1{
+    left: 2%;
+    top: 16%;
     padding: 10px;
-    text-align: center;
-    color: var(--cor02);
+    font-size: 3.2em;
+    position: absolute;
+    color: var(--cor01);
+    font-family: var(--fontpadrao);
 }
 
-nav{
-    background-color: var(--cor01);
+h2{
+    left: 2%;
+    top: 25%;
+    padding: 10px;
+    font-size: 3.5em;
+    position: absolute;
+    color: var(--cor01);
+    font-family: var(--fontpadrao);
 }
 
-#itens{
-    display: none;
-}
-
-nav a{
-    padding: 5px;
-    display: block;
+#cardapio{
+    top: 40%;
+    left: 5%;
     color: white;
-    font-size: 1.2em;
-    text-align: center;
-    border: 2px solid;
+    padding: 20px;
+    position: absolute;
     text-decoration: none;
+    border: 2px solid gray;
 }
 
-nav a:hover{
-    background-color: #FCB22B;
+#cardapio:hover{
+    border:none;
+    color: black;
+    background-color: var(--cor02);
 }
 
+#reserva{
+    top: 40%;
+    left: 37%;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    text-decoration: none;
+    border: 2px solid gray;
+}
+
+#reserva:hover{
+    border:none;
+    color: black;
+    background-color: var(--cor02);
+}
