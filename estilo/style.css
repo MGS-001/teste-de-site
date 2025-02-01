@@ -1,98 +1,76 @@
 @charset "UTF-8";
-/*Versão Mobile*/
+/* Versão Mobile*/
 
-@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
 
 :root{
-    --cor01:#FC6F2B;
-    --cor02:#fcb32ba2;
+    --cor1:#DE4E2C;
+    --cor2:#DB9644;
+    --cor3:rgb(85, 81, 81);
 
-    --fontpadrao: 'Gwendolyn';
+    --fontpadra:Merienda;
 }
 
 *{
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
 }
+
 
 body{
     width: 100vw;
     height: 100vh;
-    background-color: rgba(73, 71, 71, 0.956);
-}
-
-nav img{
-    height: 3vh;
-    padding: 5px;
-    margin-top: 10px;
-    border-radius: 18px;
-}
-
-nav img:hover{
-    border-radius: 20px;
-    border: 1px solid gray;
-}
-
-nav{
-    text-align: right;
+    background-color: var(--cor3);
 }
 
 section{
     width: 100vw;
     height: 100vh;
-    background:url('../imagem/hamburguer.jpg') no-repeat;
+    background: url(../imagem/hamburguer.jpg) no-repeat;
     background-size: cover;
-    background-position: left bottom;
+    background-attachment: fixed;
 }
 
-h1{
-    left: 2%;
-    top: 16%;
-    padding: 10px;
-    font-size: 3.2em;
+nav{
+    padding: 15px;
+    text-align: right;
+}
+
+nav img:hover{
+    border-radius: 10px;
+   border: 2px solid gray;
+}
+
+nav img{
+    display: inline;
+    height: 25px;
+}
+
+aside{
+    left: 7%;
+    top: 15%;
+    font-size: 2em;
     position: absolute;
-    color: var(--cor01);
-    font-family: var(--fontpadrao);
 }
 
-h2{
-    left: 2%;
-    top: 25%;
-    padding: 10px;
-    font-size: 3.5em;
-    position: absolute;
-    color: var(--cor01);
-    font-family: var(--fontpadrao);
+p{
+    font-family: Merienda;
+    font-size: 1.5em;
+    color: var(--cor1);
 }
 
-#cardapio{
-    top: 40%;
-    left: 5%;
+aside > a{
     color: white;
-    padding: 20px;
-    position: absolute;
+    padding: 5px;
+    margin-top: 20px;
+    display: inline-block;
     text-decoration: none;
     border: 2px solid gray;
 }
 
-#cardapio:hover{
-    border:none;
+aside > a:hover{
+    border: 0px;
     color: black;
-    background-color: var(--cor02);
-}
-
-#reserva{
-    top: 40%;
-    left: 37%;
-    color: white;
-    padding: 20px;
-    position: absolute;
-    text-decoration: none;
-    border: 2px solid gray;
-}
-
-#reserva:hover{
-    border:none;
-    color: black;
-    background-color: var(--cor02);
+    transition: 0.8s;
+    background-color: var(--cor1);
 }
