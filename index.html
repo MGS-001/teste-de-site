@@ -3,25 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilo/style.css" media="all">
     <title>Toca do LoBo</title>
 </head>
 <body>
     <main>
         <section>
-            <nav>
-                <a href=""><img src="imagem/logo-WhatsApp.webp" alt=""></a>
-                <a href=""><img src="imagem/logo-Instagram.webp" alt=""></a>
-                <a href=""><img src="imagem/Logo-YouTube.png" alt=""></a>
-                <a href=""><img src="imagem/logo-X.jpg" alt=""></a>
+            <span id="menuham" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <nav id="itens">
+                <a href="#">Home</a>
+                <a href="#">Sobre Nós</a>
+                <a href="#">Menu</a>
+                <a href="#">Chefes</a>
+                <a href="#">Galeria</a>
+                <a href="#">Contatos</a>
             </nav>
-            <aside>
-                <p>Lanchonete</p>
-                <p>Toca do LoBo <img src="imagem/lobo1.png" alt=""></p>
-                <a href="">Cardápio</a>
-                <a href="">Faça sua Reserva</a>
-            </aside>
+            <h1>Toca Do LoBo</h1>
+            <h1>Restaurante e Lanchonete</h1>
+            <img id="lobo" src="imagem/lobo1.png" alt="Imagem de um Lobo">
+            <a  id="reservar" href="#">Reservar Uma Mesa</a>
         </section>
     </main>
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

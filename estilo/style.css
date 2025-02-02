@@ -1,76 +1,102 @@
 @charset "UTF-8";
-/* Versão Mobile*/
+/*Versão Mobile*/
 
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
 
 :root{
-    --cor1:#DE4E2C;
-    --cor2:#DB9644;
-    --cor3:rgb(85, 81, 81);
-
-    --fontpadra:Merienda;
+    --cor1:#EB4E1E;
+    --cor2:#E8C625;
+    --fontpadrao:'Quintessential';
 }
 
 *{
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
 }
 
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
 
 body{
-    width: 100vw;
     height: 100vh;
-    background-color: var(--cor3);
+    width: 100vw;
+    background-color: rgb(148, 143, 143);
 }
 
 section{
-    width: 100vw;
     height: 100vh;
-    background: url(../imagem/hamburguer.jpg) no-repeat;
+    width: 100vw;
+    background: url('../imagem/hambuguer2.jpg') no-repeat left center;
     background-size: cover;
-    background-attachment: fixed;
 }
 
-nav{
-    padding: 15px;
-    text-align: right;
-}
-
-nav img:hover{
-    border-radius: 10px;
-   border: 2px solid gray;
-}
-
-nav img{
-    display: inline;
-    height: 25px;
-}
-
-aside{
-    left: 7%;
-    top: 15%;
+#menuham{
     font-size: 2em;
-    position: absolute;
+    padding: 10px;
+    color: var(--cor2);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.273);
 }
 
-p{
-    font-family: Merienda;
-    font-size: 1.5em;
+#menuham:hover{
     color: var(--cor1);
 }
 
-aside > a{
+nav{
+    display:none;
+    width: 100vw;
+    background-color:var(--cor1) ;
+}
+
+nav#itens > a{
+    text-align: left;
+    display: block;
     color: white;
-    padding: 5px;
-    margin-top: 20px;
-    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid rgb(148, 143, 143);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.511);
+}
+
+nav a:hover{
+    transition: 0.5s;
+    color: black;
+    background-color: var(--cor2);
+}
+
+h1{
+    top: 20px;
+    left: 4%;
+    font-size: 2em;
+    position: relative;
+    color: var(--cor1);
+    font-family: var(--fontpadrao);
+}
+
+img{
+    left: 20%;
+    top: 40px;
+    position: relative;
+}
+
+#reservar{
+    top: 7%;
+    left: 10%;
+    width: 150px;
+    margin: 20px;
+    display: block;
+    padding: 10px;
+    color: white;
+    position: relative;
+    text-align: center;
     text-decoration: none;
     border: 2px solid gray;
 }
 
-aside > a:hover{
+a:hover{
     border: 0px;
     color: black;
-    transition: 0.8s;
-    background-color: var(--cor1);
+    background-color: rgb(183, 178, 178);
 }
