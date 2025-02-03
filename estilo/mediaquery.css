@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/* Mobile: até 576px
+   Tablet: 577 até 1024px
+   Desktop: 1025 até 1440px
+   Telas Grande: minimo de 1441px
+*/
+
+@media screen and (min-width:577px) {
+    #menuham{
+       display: none;
+    }
+
+    nav{
+     display: block;
+     height: 20px;
+     width: 98vw;
+     padding: 10px;
+     text-align: right;
+     background-color: rgba(0, 0, 0, 0.364);
+    }
+
+    nav#itens a{
+       display: inline;
+       width: 70px;
+       text-align: center;
+    }
+
+    section{
+        width: 100vw;
+        height: 80vh;
+        background: url(../imagem/pizza1.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #texto{
+        top: 40%;
+        left: 50%;
+        display: block;
+        padding: 20px;
+        text-align: center;
+        border-radius: 20px;
+        transform: translate(-50%,-50%);
+        background-color: rgba(128, 128, 128, 0.851);
+    }
+
+    #texto img{
+        display: block;
+    }
+
+    #reservar{
+        position: absolute;
+        top: 110%;
+        left: 20%;
+        border: 0px;
+        background-color: rgba(128, 128, 128, 0.674);
+    }
+
+   #localização h1{
+       width: 50vw;
+       margin: auto;
+       display:block;
+       padding: 3px;
+       color: white;
+       text-align: center;
+       background-color: gray;
+       text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.581);
+   }
+
+   iframe{
+    width: 50vw;
+    height: 50vh;
+    display: block;
+    margin: auto;
+   }
+}

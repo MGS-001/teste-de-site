@@ -25,14 +25,15 @@ body{
 }
 
 section{
-    height: 100vh;
     width: 100vw;
+    height: 50vh;
     background: url('../imagem/hamburguer3.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
 #menuham{
+    display: block;
     font-size: 2em;
     padding: 10px;
     color: var(--cor2);
@@ -44,56 +45,68 @@ section{
 }
 
 nav{
+    float: left;
     display:none;
-    width: 100vw;
-    background-color:var(--cor1) ;
+    height: 90vh;
+    padding: 5px;
+    position: relative;
+    border-radius: 10px;
+    background-color: #eb4e1e8d;
 }
 
 nav#itens > a{
-    text-align: left;
     display: block;
-    color: white;
     padding: 10px;
+    color: white;
     text-align: center;
+    font-weight: bolder;
     text-decoration: none;
-    border: 2px solid rgb(148, 143, 143);
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.511);
 }
 
-nav a:hover{
-    transition: 0.5s;
+#itens a:hover {
     color: black;
-    background-color: var(--cor2);
+    padding: 10px;
+    transition: 0.5s;
+    background-color:#e8c82563;
 }
 
-h1{
-    left: 4%;
-    font-size: 2em;
-    position: relative;
+#texto{
+    top: 10%;
+    left: 22%;
+    font-size: 1.4em;
     color: var(--cor1);
+    position: absolute;
     font-family: var(--fontpadrao);
 }
 
+
 img{
-    left: 10%;
+    left: 20%;
     position: relative;
 }
 
 #reservar{
-    left: 5%;
-    width: 30%;
-    margin: 20px;
-    display: block;
-    padding: 10px;
+    left: 10%;
+    top: 110%;
     color: white;
-    position: relative;
-    text-align: center;
+    padding: 10px;
+    position: absolute;
+    font-weight: bolder;
+    border-radius: 10px;
     text-decoration: none;
-    border: 2px solid gray;
+    border: 2px solid rgb(101, 99, 99);
 }
 
 #reservar:hover{
-    border: 0px;
     color: black;
-    background-color: gray;
+    transition: 0.4s;
+    background-color: rgba(128, 128, 128, 0.641);
+}
+
+#localização h1{
+    display: none;
+}
+
+ iframe{
+    display: none;
 }
