@@ -15,9 +15,9 @@
      display: block;
      height: 20px;
      width: 98vw;
-     padding: 10px;
+     padding: 15px;
      text-align: right;
-     background-color: rgba(0, 0, 0, 0.364);
+     background-color: rgba(0, 0, 0, 0.607);
     }
 
     nav#itens a{
@@ -28,24 +28,27 @@
 
     section{
         width: 100vw;
-        height: 80vh;
+        height: 90vh;
         background: url(../imagem/pizza1.jpg) no-repeat;
         background-size: cover;
         background-attachment: fixed;
     }
 
     #texto{
-        top: 40%;
+        top: 50%;
         left: 50%;
         display: block;
         padding: 20px;
+        font-size: 2em;
         text-align: center;
         border-radius: 20px;
         transform: translate(-50%,-50%);
-        background-color: rgba(128, 128, 128, 0.851);
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.451);
+        background-color: rgba(128, 128, 128, 0.674);
     }
 
-    #texto img{
+    #lobo{
+        left: 30%;
         display: block;
     }
 

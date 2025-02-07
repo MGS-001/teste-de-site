@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /*Versão Mobile*/
 
-@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
 :root{
     --cor1:#EB4E1E;
     --cor2:#E8C625;
-    --fontpadrao:'Quintessential';
+    --fontpadrao: 'Italianno';
 }
 
 *{
@@ -51,7 +51,9 @@ nav{
     padding: 5px;
     position: relative;
     border-radius: 10px;
-    background-color: #eb4e1e8d;
+    font-size: 1.4em;
+    font-family: var(--fontpadrao);
+    background-color: #eb4e1e51;
 }
 
 nav#itens > a{
@@ -94,6 +96,7 @@ img{
     font-weight: bolder;
     border-radius: 10px;
     text-decoration: none;
+    font-family:var(--fontpadrao);
     border: 2px solid rgb(101, 99, 99);
 }
 
