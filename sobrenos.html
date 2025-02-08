@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós</title>
     <link rel="stylesheet" href="estilo/sobrenos.css" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 </head>
-<body>
+<body onresize="mudaTamanho()">
    <header>
-         <nav id="itens">
+      <span id="menuham" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+      <nav id="itens">
             <a href="index.html">Home</a>
             <a href="Menu.html">Menu</a>
             <a href="Chefes.html">Chefes</a>
@@ -43,5 +45,22 @@
          </section>
     </main>
     <footer><p>Todos os Direito estão Reservados &copy</p></footer>
+    <script>
+      function mudaTamanho() {
+         if (window.innerWidth >= 577) {
+            itens.style.display = 'block'
+         } else {
+            itens.style.display = 'none'
+         }
+      }
+
+      function clickMenu() {
+         if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+         } else {
+            itens.style.display = 'block'
+         }
+      }
+    </script>
 </body>
 </html>

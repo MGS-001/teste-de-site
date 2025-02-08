@@ -64,6 +64,7 @@
         }
 
         table{
+            width: 95%;
             margin: auto;
             position: relative;
             margin-bottom: 20px;
@@ -89,10 +90,20 @@
                 text-align: center;
             }
 
+            #conteiner{
+                overflow-x: auto;
+            }
+
             nav a{
                 display: block;
                 text-align: center;
             }
+
+            thead > th{
+            position: sticky;
+            top: -1px;
+        }
+
         }
     </style>
 </head>
@@ -109,151 +120,153 @@
          </nav>
     </header>
     <main>
-        <h1>MENU</h1>
-        <table>
-            <thead>
-                <th>Pratos</th>
-                <th>Tamanho</th>
-                <th>Preço</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Sandwich</td>
-                    <td>Pequeno / Médio</td>
-                    <td>/P/ R$ 6,00 /M/ R$ 8,00</td>
-                </tr>
-                <tr>
-                    <td>Cachorro Quente</td>
-                    <td>Médio / Grande</td>
-                    <td>/M/ R$ 7,00 /G/ R$ 9,50</td>
-                </tr>
-                <tr>
-                    <td>Batata Frita</td>
-                    <td>Pequeno / Médio / Grande</td>
-                    <td>/P/ R$ 8,00 /M/ R$ 11,00 /G/ R$18,00</td>
-                </tr>
-                <tr>
-                    <td>Taco Mexicano</td>
-                    <td>Pequeno / Médio</td>
-                    <td>/P/ R$ 3,00 /M/ R$ 5,00</td>
-                </tr>
-                <tr>
-                    <td>Hamburguer</td>
-                    <td>Médio / Grande</td>
-                    <td>/M/ R$ 8,50 /G/ R$ 10,00</td>
-                </tr>
-                <tr>
-                    <td>Frango Frito</td>
-                    <td>Médio / Grande</td>
-                    <td>/M/ R$ 12,00 /G/ R$ 18,00</td>
-                </tr>
-                <tr>
-                    <td>Macarronada</td>
-                    <td>Médio / Grande</td>
-                    <td>/M/ R$ 20,00 /G/ R$ </td>
-                </tr>
-                <tr>
-                    <td>Pizza</td>
-                    <td>Pequeno / Médio / Grande</td>
-                    <td>/P/ R$ 15,00 /M/ R$ 20,00 /G/ R$ 35,00</td>
-                </tr>
-                <tr>
-                    <td>Peixe Empanado</td>
-                    <td>Pequeno / Médio / Grande</td>
-                    <td>/P/ R$ 7,00 /M/ R$10,00 /G/ R$ 17,00</td>
-                </tr>
-                <tr>
-                    <td>Milk Shake</td>
-                    <td>Médio / Grande</td>
-                    <td>/M/ R$ 8,00 /G/ R$ 10,00</td>
-                </tr>
-                <tr>
-                    <td>Café</td>
-                    <td>Pequeno / Médio / Grande</td>
-                    <td>/P/ R$ 1,00 /M/ R$ 4,00 /G/ R$ 7,00</td>
-                </tr>
-                <tr>
-                    <td>Burrito</td>
-                    <td>Médio / Grande</td>
-                    <td>/M/ R$3,50 /G/ R$ 6,00</td>
-                </tr>
-                <tr>
-                <td>Torta de Limão</td>
-                <td>Médio / Grande</td>
-                <td>/M/ R$ 9,00 /G/ R$ 12,00</td>
-               </tr>
-               <tr>
-                <td>Empanada</td>
-                <td>Pequeno / Médio</td>
-                <td>/P/ R$ 2,80 /M/ R$ 4,00</td>
-               </tr>
-               <tr>
-                <td>Bobó de camarão</td>
-                <td>Médio / Grande</td>
-                <td>/M/ R$ 12,00 /G/ R$ 22,00</td>
-               </tr>
-               <tr>
-                <td>Feijoada</td>
-                <td>Pequeno / Médio / Grande</td>
-                <td>/P/ R$ 12,80 /M/ R$ 18,00 /G/ R$ 22,00</td>
-               </tr>
-               <tr>
-                <td>Quindim</td>
-                <td>Pequeno / Médio</td>
-                <td>/P/ R$ 5,60 /M/ R$ 8,00</td>
-               </tr>
-               <tr>
-                <td>Escondidinho</td>
-                <td>Médio / Grande</td>
-                <td>/M/ R$ 14,00 /G/ R$ 20,00</td>
-               </tr>
-               <tr>
-                <td>Coxinha</td>
-                <td>Pequeno / Médio</td>
-                <td>/P/ R$ 3,00 /M/ R$ 5,00</td>
-               </tr>
-               <tr>
-                <td>Moqueca</td>
-                <td>Médio / Grande</td>
-                <td>/M/ R$ 9,00 /G/ R$ 14,00</td>
-               </tr>
-               <tr>
-                <td>Bife a Parmegiana</td>
-                <td>Médio / Grande</td>
-                <td>/M/ R$ 24,00 /G/ R$ 30,00</td>
-               </tr>
-               <tr>
-                <td>Estrogonofe</td>
-                <td>Pequeno / Médio / Grande</td>
-                <td>/P/ R$ 10,00 /M/ R$ 15,00 /G/ R$ 20,00</td>
-               </tr>
-               <tr>
-                <td>Pastel</td>
-                <td>Médio / Grande</td>
-                <td>/M/ R$ 8,00 /G/ R$ 12,00</td>
-               </tr>
-               <tr>
-                <td>Lasanha</td>
-                <td>Médio / Grande</td>
-                <td>/M/ R$ 13,00 /G/ R$ 18,50</td>
-               </tr>
-               <tr>
-                <td>Aneis de Cebola</td>
-                <td>Médio / Grande</td>
-                <td>/M/ R$ 7,00 /G/ R$ 9,80</td>
-               </tr>
-               <tr>
-                <td>Suco Natural</td>
-               <td>Médio / Grande</td>
-               <td>/M/ R$ 7,50 /G/ R$ 9,80</td>
-            </tr>
-            <tr>
-                <td>Milho Verde</td>
-                <td>Pequeno / Médio / Grande</td>
-                <td>/P/ R$ 6,00 /M/ R$ 8,20 /G/ R$ 12,00</td>
-            </tr>
-            </tbody>
-        </table>
+        <div id="conteiner">
+            <h1>MENU</h1>
+                <table>
+                    <thead>
+                        <th>Pratos</th>
+                        <th>Tamanho</th>
+                        <th>Preço</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sandwich</td>
+                            <td>Pequeno / Médio</td>
+                            <td>/P/ R$ 6,00 /M/ R$ 8,00</td>
+                        </tr>
+                        <tr>
+                            <td>Cachorro Quente</td>
+                            <td>Médio / Grande</td>
+                            <td>/M/ R$ 7,00 /G/ R$ 9,50</td>
+                        </tr>
+                        <tr>
+                            <td>Batata Frita</td>
+                            <td>Pequeno / Médio / Grande</td>
+                            <td>/P/ R$ 8,00 /M/ R$ 11,00 /G/ R$18,00</td>
+                        </tr>
+                        <tr>
+                            <td>Taco Mexicano</td>
+                            <td>Pequeno / Médio</td>
+                            <td>/P/ R$ 3,00 /M/ R$ 5,00</td>
+                        </tr>
+                        <tr>
+                            <td>Hamburguer</td>
+                            <td>Médio / Grande</td>
+                            <td>/M/ R$ 8,50 /G/ R$ 10,00</td>
+                        </tr>
+                        <tr>
+                            <td>Frango Frito</td>
+                            <td>Médio / Grande</td>
+                            <td>/M/ R$ 12,00 /G/ R$ 18,00</td>
+                        </tr>
+                        <tr>
+                            <td>Macarronada</td>
+                            <td>Médio / Grande</td>
+                            <td>/M/ R$ 20,00 /G/ R$ </td>
+                        </tr>
+                        <tr>
+                            <td>Pizza</td>
+                            <td>Pequeno / Médio / Grande</td>
+                            <td>/P/ R$ 15,00 /M/ R$ 20,00 /G/ R$ 35,00</td>
+                        </tr>
+                        <tr>
+                            <td>Peixe Empanado</td>
+                            <td>Pequeno / Médio / Grande</td>
+                            <td>/P/ R$ 7,00 /M/ R$10,00 /G/ R$ 17,00</td>
+                        </tr>
+                        <tr>
+                            <td>Milk Shake</td>
+                            <td>Médio / Grande</td>
+                            <td>/M/ R$ 8,00 /G/ R$ 10,00</td>
+                        </tr>
+                        <tr>
+                            <td>Café</td>
+                            <td>Pequeno / Médio / Grande</td>
+                            <td>/P/ R$ 1,00 /M/ R$ 4,00 /G/ R$ 7,00</td>
+                        </tr>
+                        <tr>
+                            <td>Burrito</td>
+                            <td>Médio / Grande</td>
+                            <td>/M/ R$3,50 /G/ R$ 6,00</td>
+                        </tr>
+                        <tr>
+                        <td>Torta de Limão</td>
+                        <td>Médio / Grande</td>
+                        <td>/M/ R$ 9,00 /G/ R$ 12,00</td>
+                       </tr>
+                       <tr>
+                        <td>Empanada</td>
+                        <td>Pequeno / Médio</td>
+                        <td>/P/ R$ 2,80 /M/ R$ 4,00</td>
+                       </tr>
+                       <tr>
+                        <td>Bobó de camarão</td>
+                        <td>Médio / Grande</td>
+                        <td>/M/ R$ 12,00 /G/ R$ 22,00</td>
+                       </tr>
+                       <tr>
+                        <td>Feijoada</td>
+                        <td>Pequeno / Médio / Grande</td>
+                        <td>/P/ R$ 12,80 /M/ R$ 18,00 /G/ R$ 22,00</td>
+                       </tr>
+                       <tr>
+                        <td>Quindim</td>
+                        <td>Pequeno / Médio</td>
+                        <td>/P/ R$ 5,60 /M/ R$ 8,00</td>
+                       </tr>
+                       <tr>
+                        <td>Escondidinho</td>
+                        <td>Médio / Grande</td>
+                        <td>/M/ R$ 14,00 /G/ R$ 20,00</td>
+                       </tr>
+                       <tr>
+                        <td>Coxinha</td>
+                        <td>Pequeno / Médio</td>
+                        <td>/P/ R$ 3,00 /M/ R$ 5,00</td>
+                       </tr>
+                       <tr>
+                        <td>Moqueca</td>
+                        <td>Médio / Grande</td>
+                        <td>/M/ R$ 9,00 /G/ R$ 14,00</td>
+                       </tr>
+                       <tr>
+                        <td>Bife a Parmegiana</td>
+                        <td>Médio / Grande</td>
+                        <td>/M/ R$ 24,00 /G/ R$ 30,00</td>
+                       </tr>
+                       <tr>
+                        <td>Estrogonofe</td>
+                        <td>Pequeno / Médio / Grande</td>
+                        <td>/P/ R$ 10,00 /M/ R$ 15,00 /G/ R$ 20,00</td>
+                       </tr>
+                       <tr>
+                        <td>Pastel</td>
+                        <td>Médio / Grande</td>
+                        <td>/M/ R$ 8,00 /G/ R$ 12,00</td>
+                       </tr>
+                       <tr>
+                        <td>Lasanha</td>
+                        <td>Médio / Grande</td>
+                        <td>/M/ R$ 13,00 /G/ R$ 18,50</td>
+                       </tr>
+                       <tr>
+                        <td>Aneis de Cebola</td>
+                        <td>Médio / Grande</td>
+                        <td>/M/ R$ 7,00 /G/ R$ 9,80</td>
+                       </tr>
+                       <tr>
+                        <td>Suco Natural</td>
+                       <td>Médio / Grande</td>
+                       <td>/M/ R$ 7,50 /G/ R$ 9,80</td>
+                    </tr>
+                    <tr>
+                        <td>Milho Verde</td>
+                        <td>Pequeno / Médio / Grande</td>
+                        <td>/P/ R$ 6,00 /M/ R$ 8,20 /G/ R$ 12,00</td>
+                    </tr>
+                    </tbody>
+                </table>
+        </div>
     </main>
     <script>
         function clickMenu() {
