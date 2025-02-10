@@ -78,8 +78,9 @@ h2{
 }
 
 img{
-    width: 400px;
-    margin: auto;
+   display: block;
+   margin: auto;
+   width: 80%;
 }
 
 p{
