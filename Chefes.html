@@ -7,7 +7,7 @@
     <title>Chefs</title>
     <link rel="stylesheet" href="estilo/chefs.css" media="all">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <span id="menuham" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <nav id="itens">
@@ -23,32 +23,53 @@
             <h1>Chefes</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, facilis? Aliquid optio provident sunt consectetur, soluta quas amet unde ab veniam id iure facilis earum cum ipsum voluptatibus impedit est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ullam blanditiis, tempore voluptate est, dicta eos ipsa rem expedita possimus facere architecto illum odit. Distinctio commodi nulla sint et culpa.</p>
                 <h2>Matteo Ricci</h2>
-                <img src="imagem/chef.jpg" alt="chefe de cozinha">
+                    <picture>
+                        <source media="(max-width:576px)" srcset="imagem/chefpequeno.jpg">
+                        <img src="imagem/chef.jpg" alt="chefe de Cozinha">
+                    </picture>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, veritatis incidunt, excepturi, dignissimos sunt explicabo suscipit veniam necessitatibus illum architecto unde. Explicabo sint itaque cumque dolore voluptatem, aut quaerat voluptate.
                 Facere, animi cum voluptas exercitationem reiciendis eveniet nulla dignissimos necessitatibus similique deserunt libero quasi nisi. Animi corrupti, expedita est eaque rerum sed voluptates id nam iure itaque dignissimos, libero culpa.</p>
         </section>
         <section>
             <h2>Santiago Martínez</h2>
-            <img src="imagem/chef01.jpg" alt="SubChef de Cozinha">
+              <picture>
+                  <source media="(max-width:576px)" srcset="imagem/chef01pequeno.jpg">
+                  <img src="imagem/chef01.jpg" alt="Cozinheiro">
+            </picture>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nisi sequi culpa nihil, magnam, eius non eligendi odit dolorum quasi magni delectus fugiat totam adipisci a? Mollitia perferendis tempora dolore!
             Quidem hic maxime molestiae iure porro ipsum non recusandae deleniti, quisquam facilis at pariatur quod a distinctio reprehenderit odio nemo impedit eveniet! Nisi exercitationem modi recusandae, aspernatur quam eveniet praesentium?
             Reiciendis veritatis eius dolorem at unde repudiandae minus fuga perspiciatis sunt, laudantium molestiae nihil veniam dolore quia a. Pariatur assumenda ratione inventore suscipit aut aperiam eius, odio possimus recusandae officiis.</p>
         </section>
         <section>
             <h2>Rogério Andrade</h2>
-            <img src="imagem/chef02.jpg" alt="Cozinheiro">
+                <picture>
+                    <source media="(max-width:576px)" srcset="imagem/chef02pequeno.jpg">
+                    <img src="imagem/chef02.jpg" alt="chefe de Cozinha">
+                </picture>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, aut accusantium. Perferendis asperiores blanditiis corporis. Laboriosam, assumenda. Facere quibusdam culpa officia, neque eius molestias aspernatur porro inventore distinctio, a illo.
             Veritatis modi inventore deleniti. Deleniti minus soluta voluptatibus, aliquid assumenda ipsa doloremque porro fuga atque omnis eos voluptates optio. Unde hic assumenda deserunt sit porro? Iure animi possimus nisi! Ipsum.</p>
         </section>
         <section>
             <h2>Seo-yeon</h2>
-            <img src="imagem/che04.jpg" alt="Cozinheira">
+            <picture>
+                <source media="(max-width:576px)" srcset="imagem/che04pequeno.jpg">
+                <img src="imagem/che04.jpg" alt="chefe de Cozinha">
+            </picture>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure facilis officiis, commodi alias cupiditate qui similique totam, sunt amet voluptate, inventore ab voluptatum culpa modi minima saepe ipsum ullam molestiae.
             Doloribus repellat nemo laudantium minus enim porro consequuntur dicta ad ducimus voluptates non accusantium fugit esse, autem perferendis doloremque quos quidem in. Rerum natus doloremque veniam cum nostrum, repellendus beatae.</p>
         </section>
     </main>
     <footer><p>Todos os Direitos estão Reservado &copy;</p></footer>
     <script>
+        
+         function mudouTamanho() {
+           if (window.innerWidth >= 577) {
+              itens.style.display = 'block'
+           } else {
+             itens.style.display = 'none'
+           }
+       }
+
         function clickMenu(){
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
