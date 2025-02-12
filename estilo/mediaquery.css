@@ -3,8 +3,7 @@
 /* Mobile: até 576px
    Tablet: 577 até 1024px
    Desktop: 1025 até 1440px
-   Telas Grande: minimo de 1441px
-*/
+   Telas Grande: minimo de 1441px */
 
 @media screen and (min-width:577px) {
     #menuham{
@@ -29,7 +28,7 @@
     section{
         width: 100vw;
         height: 90vh;
-        background: url(../imagem/pizza1.jpg) no-repeat;
+        background: url(../imagem/fundocomida.jpg) no-repeat;
         background-size: cover;
         background-attachment: fixed;
     }

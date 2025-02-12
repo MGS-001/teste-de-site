@@ -1,17 +1,18 @@
 @charset "UTF-8";
 /*Versão Mobile*/
 
-/*fonte italiano*/
-@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap'); /*fonte titulo*/
 
-/*fonte tocadoloBo*/
-@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tillana:wght@400;500;600;700;800&display=swap'); /*fonte navegação*/
 
 :root{
-    --cor1:#EB4E1E;
-    --cor2:#E8C625;
-    --fontitaliano: 'Italianno';
-    --fonttitulo:'Gwendolyn';
+    --cor1:#262626;
+    --cor2:#BF3604;
+    --cor2:#D96704;
+    --cor4:#ed9122;
+
+    --fontnav:Tillana;
+    --fonttitulo:Kavivanar;
 }
 
 *{
@@ -21,107 +22,110 @@
 
 ::-webkit-scrollbar{
     width: 0px;
-    height: 0px;
 }
 
 body{
     height: 100vh;
     width: 100vw;
-}
-
-section{
-    width: 100vw;
-    height: 50vh;
-    background: url('../imagem/hamburguer3.jpg') no-repeat;
+    background: url('../imagem/fundoham.jpg') no-repeat right;
     background-size: cover;
     background-attachment: fixed;
 }
 
+main{
+    height: 100vh;
+    width: 100vw;
+
+}
+
 #menuham{
-    display: block;
-    font-size: 2em;
-    padding: 10px;
+    text-align: center;
     color: var(--cor2);
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.273);
+    background-color: var(--cor1);
 }
 
-#menuham:hover{
-    color: var(--cor1);
-}
-
-nav{
-    float: left;
-    display:none;
-    height: 90vh;
-    padding: 5px;
-    position: relative;
-    border-radius: 10px;
-    font-size: 1.4em;
-    font-family: var(--fontitaliano);
-    background-color: #eb4e1e51;
-}
-
-nav#itens > a{
-    display: block;
-    padding: 10px;
-    color: white;
-    text-align: center;
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-#itens a:hover{
-    color: black;
-    background-color: #e8c82562;
-
-}
-
-#texto{
-    top: 40%;
-    left: 50%;
-    padding: 10px;
+#menuham span{
     font-size: 2em;
-    color: var(--cor1);
-    position: absolute;
-    text-align: center;
-    border-radius: 10px;
-    font-family: var(--fonttitulo);
-    transform: translate(-45%,-50%);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.589);
-    background-color: rgba(128, 128, 128, 0.537);
 }
 
-
-img{
-    left: 20%;
-    position: relative;
+#menuham span:hover{
+    color: var(--cor4);
 }
 
-#reservar{
-    left: 10%;
-    top: 110%;
-    margin: 10px;
-    padding: 10px;
+#menu{
+    display: block;
+    background-color: #262626f0;
+}
+
+#menu a{
+    display: block;
+    padding: 5px;
+    font-size: 1.1em;
     color: white;
-    position: absolute;
-    font-size: 20px;
-    border-radius: 10px;
+    text-align: center;
     text-decoration: none;
-    border: 2px solid gray;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: rgba(128, 128, 128, 0.642);
+    font-family: var(--fontnav);
 }
 
-#reservar:hover{
+nav a:hover{
     color: black;
-    transition: 0.4s;
-    background-color: rgba(128, 128, 128, 0.641);
+    background-color: gray;
 }
 
-#localização h1{
-    display: none;
+#titulo{ 
+    top: 33%;
+    left: 50%;
+    padding: 5px;
+    border-radius: 10px;
+    color: var(--cor2);
+    position: absolute;
+    font-family: var(--fonttitulo);
+    background-color: #262626e9;
+    transform: translate(-50%, -50%);
 }
 
- iframe{
-    display: none;
+#reserva{
+    top: 45%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
 }
+
+#reserva a{
+    padding: 12px;
+    color: var(--cor2);
+    font-size: 1.1em;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: var(--fontnav);
+    border: 2px solid rgb((128, 128, 128, 0.534));
+    background-color: rgba(128, 128, 128, 0.534);
+}
+
+#reserva a:hover{
+    border: 0px;
+    transition: 0.5s;
+    color: #262626;
+    background-color: var(--cor2);
+}
+
+#mapa{
+    top: 90%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+#mapa h2{
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    background-color: var(--cor4);
+}
+
+iframe{
+    width: 80vw;
+    height: 50vh;
+    border-radius: 0px 0px 20px 20px;
+}
+
