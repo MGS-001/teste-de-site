@@ -8,13 +8,11 @@
     <title>Toca do LoBo</title>
     <link rel="stylesheet" href="estilo/style.css" media="all">
 </head>
-<body>
     <div id="menuham">
-        <span class="material-symbols-outlined" onclick="clickMenu()">
-            menu
-        </span>
+        <header onresize="mudouTamanho()">
+        <span class="material-symbols-outlined" onclick="clickMenu()">menu</span>
     </div>
-    <header onresize="mudouTamanho()">
+<body>
         <nav id="menu">
             <a href="Menu.html">Menu</a>
             <a href="Chefes.html">Chefs</a>
@@ -37,10 +35,10 @@
     <script>
  
         function clickMenu() {
-            if (menu.style.display == 'none') {
-                menu.style.display = 'block'
-            } else {
+            if (menu.style.display == 'block') {
                 menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
             }
         }
     </script>
