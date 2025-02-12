@@ -33,7 +33,7 @@ body{
 }
 
 main{
-    height: 50vh;
+    height: 40vh;
     width: 100vw;
 
 }
@@ -84,7 +84,6 @@ main{
     position: absolute;
     border-radius: 10px;
     font-family: var(--fonttitulo);
-    background-color: #262626e9;
     transform: translate(-50%, -50%);
     text-shadow: 2px 2px 4px #bf36047f;
 }
