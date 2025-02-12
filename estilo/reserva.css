@@ -24,8 +24,8 @@
 }
 
 body{
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
     background-color: rgba(64, 57, 57, 0.521);
 }
 
@@ -69,18 +69,17 @@ h3{
     top: 50%;
     left: 50%;
     width: 250px;
-    height: 550px;
+    height: 500px;
     position: relative;
     border-radius: 10px;
+    background-color: white;
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.867);
 }
 
 #formulario{
-    height: 58%;
     padding: 5px;
     border-radius:0px 0px 10px 10px;
-    background-color: rgb(240, 248, 255);
 }
 
 #formulario div{
@@ -88,12 +87,19 @@ h3{
    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.251);
 }
 
+input{
+    border-radius: 5px;
+    padding: 2px;
+    border: 1px solid black;
+}
+
 .botao{
     border: 0px;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     color: white;
-    margin-top: 15px;
+    margin-top: 8px;
+    border-radius: 8px;
     background-color:rgba(128, 128, 128, 0.779);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.427);
 }
