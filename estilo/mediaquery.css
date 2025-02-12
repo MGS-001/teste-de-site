@@ -41,10 +41,10 @@
 
     #formulario{
         top: 15%;
-        left: 58%;
-        width: 220px;
+        right: 10%;
+        width: 250px;
+        height: 430px;
         display: block;
-        height: 310px;
         padding: 20px;
         position: absolute;
         border-radius: 10px;
@@ -53,12 +53,12 @@
 
     #formulario input{
         border: 0px;
-        padding: 5px;
+        padding: 10px;
         border-radius: 8px;
     }
 
     #formulario label{
-        padding: 4px;
+        padding: 5px;
         display: block;
     }
 
@@ -77,9 +77,10 @@
     }
 
     #mapa{
-        top: 120%;
-        left: 50%;
-        width: 80vw;
+        top: 70%;
+        left: 28%;
+        width: 50vw;
+        display: block;
         position: absolute;
         transform: translate(-50%,-50%);
     }
@@ -89,7 +90,31 @@
     }
 
     iframe{
-        width: 80vw;
+        width: 50vw;
         height: 50vh;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:850px){
+    #titulo{
+        top: 15%;
+        left: 52%;
+    }
+
+    #formulario{
+        top:20%;
+        left: 30%;
+        display: block;
+        position: absolute;
+    }
+
+    #mapa{
+        left: 50%;
+        top: 140%;
+        width: 80vw;
+    }
+
+    iframe{
+        width: 80vw;
     }
 }
