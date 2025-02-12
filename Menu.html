@@ -64,16 +64,16 @@
         }
 
         table{
-            width: 95%;
             margin: auto;
+            width: 800px;
             position: relative;
             margin-bottom: 20px;
             border-collapse: collapse;
         }
 
         thead > tr > th{
-            position: sticky;
             top: -1px;
+            position: sticky;
         }
 
         th,td{
@@ -81,28 +81,41 @@
             border: 2px solid black;
         }
 
+        footer p {
+            padding: 10px;
+            text-align: center;
+        }
+
         @media screen and (max-width:576px) {
+            body{
+            background: rgb(1, 1, 1);
+            }
+
             #menuham{
-                color: white;
-                display: block;
-                padding: 10px;
-                font-size: 30px;
-                text-align: center;
+            color: white;
+            display: block;
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
             }
 
-            #conteiner{
-                overflow-x: auto;
+            #container{
+            overflow-x: auto;
             }
 
-            nav a{
-                display: block;
-                text-align: center;
+            table{
+          
             }
 
-            thead > th{
+           nav a{
+            display: block;
+            text-align: center;
+            }
+
+          thead > th{
             position: sticky;
             top: -1px;
-        }
+          }
 
         }
     </style>
@@ -113,9 +126,7 @@
          <nav id="itens">
             <a href="index.html">Home</a>
             <a href="sobrenos.html">Sobre Nós</a>
-            <a href="Menu.html">Menu</a>
             <a href="Chefes.html">Chefes</a>
-            <a href="Galeria.html">Galeria</a>
             <a href="Contatos.html">Contatos</a>
          </nav>
     </header>
@@ -162,7 +173,7 @@
                         <tr>
                             <td>Macarronada</td>
                             <td>Médio / Grande</td>
-                            <td>/M/ R$ 20,00 /G/ R$ </td>
+                            <td>/M/ R$ 20,00 /G/ R$ 25,00</td>
                         </tr>
                         <tr>
                             <td>Pizza</td>

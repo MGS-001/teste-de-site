@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <title>Reserva</title>
+    <link rel="stylesheet" href="estilo/reserva.css">
+</head>
+<body>
+    <header>
+        <span id="menuham" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <nav id="itens">
+            <a href="index.html">Home</a>
+            <a href="sobrenos.html">Sobre Nós</a>
+            <a href="Menu.html">Menu</a>
+            <a href="Chefes.html">Chefes</a>
+            <a href="Contatos.html">Contatos</a>
+        </nav>
+    </header>
+    <main>
+        <section id="login">
+            <div id="Imagem"></div>
+            <div id="formulario">
+               <form action="" method="post">
+                  <h3>Faça Sua Reserva</h3>
+                    <div>
+                        <label for="inome"> Nome:
+                            <input type="text" name="nome" id="inome" required autocomplete="name" maxlength="30" minlength="4" size="30">
+                        </label>
+                    </div>
+
+                    <div>
+                        <label for="itelefone"> Telefone de Contato:
+                            <input type="tel" name="telefone" id="itelefone" required autocomplete="tel-area-code" placeholder="(xx) xxxxx - xxxx">
+                        </label>
+                    </div>
+
+                    <div>
+                        <label for="idata"> Data da Reserva:
+                            <input type="date" name="data" id="idata" required>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label for="ihora"> Hora da Reserva:
+                            <input type="time" name="hora" id="ihora" required>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label for="inumero"> Número de Pessoas:
+                            <input type="number" name="numero" id="inumero" required min="1" max="10" >
+                        </label>
+                    </div>
+
+                    <input type="submit" class="botao" value="Fazer Reservar">
+                    <input type="reset" class="botao" value="Limpar">
+               </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
