@@ -7,12 +7,13 @@
     <link rel="shortcut icon" href="imagem/lobo.png" type="image/x-icon">
     <title>Toca do LoBo</title>
     <link rel="stylesheet" href="estilo/style.css" media="all">
+    <link rel="stylesheet" href="estilo/mediaquery.css">
 </head>
-    <div id="menuham">
-        <header onresize="mudouTamanho()">
-        <span class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-    </div>
-<body>
+<body onresize="mudaTamanho()">
+    <header>
+        <div id="menuham">
+            <span class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        </div>
         <nav id="menu">
             <a href="Menu.html">Menu</a>
             <a href="Chefes.html">Chefs</a>
@@ -27,18 +28,46 @@
         <div id="reserva">
             <a href="">Faça Sua Reserva</a>
         </div>
+        <div id="formulario">
+            <form action="reserva.php" method="post">
+                <label for="inome"> Nome:
+                    <input type="text" name="nome" id="inome" placeholder="Seu Nome" required autocomplete="name" maxlength="30" size="26">
+                </label>
+                <label for="inum"> Contato:
+                    <input type="tel" name="numero" id="inum" placeholder="(xx) xxxxx -- xxxx" required autocomplete="tel">
+                </label>
+                <label for="idata"> Data:
+                    <input type="date" name="" id="" required>
+                </label>
+                <label for="ihora"> Hora:
+                    <input type="time" name="hora" id="ihora" required>
+                </label>
+                <label for="inum"> Número de Pessoas:
+                    <input type="number" name="numero" id="inum" min="1" max="10" value="2" required>
+                </label>
+              <input class="botao" type="submit" value="Reserva">
+              <input class="botao" type="reset" value="Limpar">
+            </form>
+        </div>
         <div id="mapa">
             <h2>Localização</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2416.187608627284!2d-73.98758987754744!3d40.74180762757385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a715fb5059%3A0xe5543b76e952fab3!2sUpland!5e1!3m2!1spt-BR!2sbr!4v1739376443886!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
     <script>
- 
         function clickMenu() {
             if (menu.style.display == 'block') {
                 menu.style.display = 'none'
             } else {
                 menu.style.display = 'block'
+            }
+        }
+
+        function mudaTamanho(){
+            if (window.innerWidth >= 577) {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
             }
         }
     </script>

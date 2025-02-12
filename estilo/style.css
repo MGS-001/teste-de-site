@@ -39,7 +39,7 @@ main{
 }
 
 #menuham{
-    display: inline;
+    display: block;
     color: var(--cor2);
 }
 
@@ -55,14 +55,15 @@ main{
 #menu{
     width: 100vw;
     margin: auto;
-    display: block;
+    display: none;
     text-align: center;
 }
 
 #menu a{
+    display: inline;
     padding: 10px;
     color: white;
-    font-size: 1.1em;
+    font-size: 1.2em;
     text-decoration: none;
     font-family: var(--fontnav);
     text-shadow:2px 2px 4px rgba(0, 0, 0, 0.414);
@@ -71,7 +72,18 @@ main{
 #menu >a:hover{
     transition: 0.5s;
     color: black;
-    background-color: rgba(128, 128, 128, 0.681);
+    background-color: var(--cor4);
+}
+
+#formulario{
+    display: none;
+    font-weight: bold;
+    font-family: var(--fontnav);
+}
+
+.botao{
+    border: 0px;
+    background-color: var(--cor4);
 }
 
 #titulo{ 
@@ -85,7 +97,6 @@ main{
     border-radius: 10px;
     font-family: var(--fonttitulo);
     transform: translate(-50%, -50%);
-    text-shadow: 2px 2px 4px #bf36047f;
 }
 
 #reserva{
