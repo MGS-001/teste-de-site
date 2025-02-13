@@ -76,6 +76,7 @@ main{
 }
 
 #formulario{
+
     display: none;
     font-weight: bold;
     font-family: var(--fontnav);

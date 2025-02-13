@@ -5,10 +5,22 @@
    Desktop: 1025 até 1440px
    Telas Grande: minimo de 1441px */
 
+   :root{
+    --cor1:#262626;
+    --cor2:#BF3604;
+    --cor3:#D96704;
+    --cor4:#ed9122;
+
+    --fonttitulo:'Tillana';
+}
+
 @media screen and (min-width:577px){
-    body{
+     body{
+        height: 100vh;
+        width: 100vw;
         background: url('../imagem/fundocomida.jpg') no-repeat;
         background-size: cover;
+        background-color: var(--cor1);
         background-attachment: fixed;
     }
 
@@ -22,16 +34,16 @@
     }
 
     #titulo{ 
-        top: 25%;
+        top: 15%;
         left: 20%;
-        width: 50vw;
-        padding: 5px;
+        width: 70vw;
+        padding: 10px;
         text-align: center;
         color: var(--cor2);
         position: absolute;
         font-family: var(--fonttitulo);
         transform: translate(-50%, -50%);
-        text-shadow: 2px 2px 4px #06060684;
+        text-shadow:2px 2px 4px rgba(0, 0, 0, 0.414);
         background-color: rgba(128, 128, 128, 0.715);
     }
 
@@ -40,20 +52,26 @@
     }
 
     #formulario{
-        top: 15%;
-        right: 10%;
-        width: 250px;
-        height: 430px;
+        top: 40%;
+        left: 30%;
+        width: 40vw;
+        padding: 10px;
         display: block;
-        padding: 20px;
+        text-align: center;
         position: absolute;
-        border-radius: 10px;
-        background-color: #d96704d3;
+        border-radius: 20px;
+        background-color: #d96704b4;
+    }
+
+    #formulario h2{
+        text-align: center;
+        text-shadow:2px 2px 4px rgba(0, 0, 0, 0.414);
     }
 
     #formulario input{
+        width: 40%;
         border: 0px;
-        padding: 10px;
+        padding: 8px;
         border-radius: 8px;
     }
 
@@ -64,22 +82,24 @@
 
     .botao{
         width: 95%;
-        margin: 3px;
+        margin: 10px;
         padding: 8px;
+        color: white;
         position: relative;
         border-radius: 10px;
+        background-color: #bf3604c7;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.632);
     }
 
     .botao:hover{
-        color: white;
+        color: #262626;
         background-color: rgba(128, 128, 128, 0.786);
     }
 
     #mapa{
-        top: 70%;
-        left: 28%;
-        width: 50vw;
+        top: 130%;
+        left: 50%;
+        width: 60vw;
         display: block;
         position: absolute;
         transform: translate(-50%,-50%);
@@ -87,31 +107,38 @@
 
     #mapa h2{
         background-color: #ed9222cf;
+        text-shadow:2px 2px 4px rgba(0, 0, 0, 0.414);
     }
 
     iframe{
-        width: 50vw;
+        width: 60vw;
         height: 50vh;
     }
 }
 
 @media screen and (min-width:577px) and (max-width:850px){
+   
+    body{
+        background:url(../imagem/fundocomida.jpg) center top;
+    }
+
     #titulo{
         top: 15%;
         left: 52%;
     }
 
     #formulario{
-        top:20%;
-        left: 30%;
-        display: block;
-        position: absolute;
+        top: 25%;
+        left: 25%;
+        width: 50vw;
+        position:absolute;
     }
 
     #mapa{
         left: 50%;
-        top: 140%;
+        top: 110%;
         width: 80vw;
+        margin-top: 50px;
     }
 
     iframe{

@@ -5,120 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Menu</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
-
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
-
-         body{
-            background: url(imagem/hamburguerecoca.jpg);
-            background-size: cover;
-            background-attachment: fixed;
-        }
-
-        #menuham{
-            display: none;
-        }
-
-        nav{
-            padding: 10px;
-            text-align: right;
-            font-size: 1.4em;
-            font-family: Italianno;
-        }
-
-        nav a{
-            padding: 5px;
-            color: white;
-            text-decoration: none;
-        }
-
-        nav a:hover{
-            color: black;
-            transition: 0.7s;
-            background-color: rgba(255, 255, 255, 0.342);
-        }
-
-        h1{
-            color: white;
-            padding: 10px;
-            margin-top: 20px;
-            text-align: center;
-            font-weight: lighter;
-            font-family: Italianno;
-        }
-
-        tbody tr:nth-child(2n){
-            background-color: gray;
-        }
-
-        tbody tr:nth-child(odd){
-            background-color: white;
-        }
-
-        th{
-            background-color: gray;
-        }
-
-        table{
-            margin: auto;
-            width: 800px;
-            position: relative;
-            margin-bottom: 20px;
-            border-collapse: collapse;
-        }
-
-        thead > tr > th{
-            top: -1px;
-            position: sticky;
-        }
-
-        th,td{
-            padding: 12px;
-            border: 2px solid black;
-        }
-
-        footer p {
-            padding: 10px;
-            text-align: center;
-        }
-
-        @media screen and (max-width:576px) {
-            body{
-            background: rgb(1, 1, 1);
-            }
-
-            #menuham{
-            color: white;
-            display: block;
-            padding: 10px;
-            font-size: 30px;
-            text-align: center;
-            }
-
-            #container{
-            overflow-x: auto;
-            }
-
-            table{
-          
-            }
-
-           nav a{
-            display: block;
-            text-align: center;
-            }
-
-          thead > th{
-            position: sticky;
-            top: -1px;
-          }
-
-        }
-    </style>
+    <link rel="stylesheet" href="estilo/menu.css" media="all">
 </head>
 <body onresize="mudouTamanho() ">
     <header>
@@ -201,100 +88,100 @@
                             <td>/M/ R$3,50 /G/ R$ 6,00</td>
                         </tr>
                         <tr>
-                        <td>Torta de Limão</td>
-                        <td>Médio / Grande</td>
-                        <td>/M/ R$ 9,00 /G/ R$ 12,00</td>
+                             <td>Torta de Limão</td>
+                             <td>Médio / Grande</td>
+                             <td>/M/ R$ 9,00 /G/ R$ 12,00</td>
                        </tr>
                        <tr>
-                        <td>Empanada</td>
-                        <td>Pequeno / Médio</td>
-                        <td>/P/ R$ 2,80 /M/ R$ 4,00</td>
+                            <td>Empanada</td>
+                            <td>Pequeno / Médio</td>
+                            <td>/P/ R$ 2,80 /M/ R$ 4,00</td>
                        </tr>
                        <tr>
-                        <td>Bobó de camarão</td>
-                        <td>Médio / Grande</td>
-                        <td>/M/ R$ 12,00 /G/ R$ 22,00</td>
+                            <td>Bobó de camarão</td>
+                            <td>Médio / Grande</td>
+                            <td>/M/ R$ 12,00 /G/ R$ 22,00</td>
                        </tr>
                        <tr>
-                        <td>Feijoada</td>
-                        <td>Pequeno / Médio / Grande</td>
-                        <td>/P/ R$ 12,80 /M/ R$ 18,00 /G/ R$ 22,00</td>
+                            <td>Feijoada</td>
+                            <td>Pequeno / Médio / Grande</td>
+                            <td>/P/ R$ 12,80 /M/ R$ 18,00 /G/ R$ 22,00</td>
                        </tr>
                        <tr>
-                        <td>Quindim</td>
-                        <td>Pequeno / Médio</td>
-                        <td>/P/ R$ 5,60 /M/ R$ 8,00</td>
+                            <td>Quindim</td>
+                            <td>Pequeno / Médio</td>
+                            <td>/P/ R$ 5,60 /M/ R$ 8,00</td>
                        </tr>
                        <tr>
-                        <td>Escondidinho</td>
-                        <td>Médio / Grande</td>
-                        <td>/M/ R$ 14,00 /G/ R$ 20,00</td>
+                            <td>Escondidinho</td>
+                            <td>Médio / Grande</td>
+                            <td>/M/ R$ 14,00 /G/ R$ 20,00</td>
                        </tr>
                        <tr>
-                        <td>Coxinha</td>
-                        <td>Pequeno / Médio</td>
-                        <td>/P/ R$ 3,00 /M/ R$ 5,00</td>
+                            <td>Coxinha</td>
+                            <td>Pequeno / Médio</td>
+                            <td>/P/ R$ 3,00 /M/ R$ 5,00</td>
                        </tr>
                        <tr>
-                        <td>Moqueca</td>
-                        <td>Médio / Grande</td>
-                        <td>/M/ R$ 9,00 /G/ R$ 14,00</td>
+                            <td>Moqueca</td>
+                            <td>Médio / Grande</td>
+                            <td>/M/ R$ 9,00 /G/ R$ 14,00</td>
                        </tr>
                        <tr>
-                        <td>Bife a Parmegiana</td>
-                        <td>Médio / Grande</td>
-                        <td>/M/ R$ 24,00 /G/ R$ 30,00</td>
+                            <td>Bife a Parmegiana</td>
+                            <td>Médio / Grande</td>
+                            <td>/M/ R$ 24,00 /G/ R$ 30,00</td>
                        </tr>
                        <tr>
-                        <td>Estrogonofe</td>
-                        <td>Pequeno / Médio / Grande</td>
-                        <td>/P/ R$ 10,00 /M/ R$ 15,00 /G/ R$ 20,00</td>
+                            <td>Estrogonofe</td>
+                            <td>Pequeno / Médio / Grande</td>
+                            <td>/P/ R$ 10,00 /M/ R$ 15,00 /G/ R$ 20,00</td>
                        </tr>
                        <tr>
-                        <td>Pastel</td>
-                        <td>Médio / Grande</td>
-                        <td>/M/ R$ 8,00 /G/ R$ 12,00</td>
+                            <td>Pastel</td>
+                            <td>Médio / Grande</td>
+                            <td>/M/ R$ 8,00 /G/ R$ 12,00</td>
                        </tr>
                        <tr>
-                        <td>Lasanha</td>
-                        <td>Médio / Grande</td>
-                        <td>/M/ R$ 13,00 /G/ R$ 18,50</td>
+                            <td>Lasanha</td>
+                            <td>Médio / Grande</td>
+                            <td>/M/ R$ 13,00 /G/ R$ 18,50</td>
                        </tr>
                        <tr>
-                        <td>Aneis de Cebola</td>
-                        <td>Médio / Grande</td>
-                        <td>/M/ R$ 7,00 /G/ R$ 9,80</td>
+                            <td>Aneis de Cebola</td>
+                            <td>Médio / Grande</td>
+                            <td>/M/ R$ 7,00 /G/ R$ 9,80</td>
                        </tr>
                        <tr>
-                        <td>Suco Natural</td>
-                       <td>Médio / Grande</td>
-                       <td>/M/ R$ 7,50 /G/ R$ 9,80</td>
-                    </tr>
-                    <tr>
-                        <td>Milho Verde</td>
-                        <td>Pequeno / Médio / Grande</td>
-                        <td>/P/ R$ 6,00 /M/ R$ 8,20 /G/ R$ 12,00</td>
-                    </tr>
+                            <td>Suco Natural</td>
+                            <td>Médio / Grande</td>
+                            <td>/M/ R$ 7,50 /G/ R$ 9,80</td>
+                        </tr>
+                        <tr>
+                            <td>Milho Verde</td>
+                            <td>Pequeno / Médio / Grande</td>
+                            <td>/P/ R$ 6,00 /M/ R$ 8,20 /G/ R$ 12,00</td>
+                        </tr>
                     </tbody>
                 </table>
         </div>
     </main>
-    <script>
-        function clickMenu() {
-         if (itens.style.display == 'block') {
-            itens.style.display = 'none'
-         } else {
-            itens.style.display ='block'
-         }
-        }
+        <script>
+           function clickMenu() {
+                  if (itens.style.display == 'block') {
+                     itens.style.display = 'none'
+                  } else {
+                itens.style.display ='block'
+                  }
+               }
 
-        function mudouTamanho() {
-           if (window.innerWidth >= 577) {
-              itens.style.display = 'block'
-           } else {
-             itens.style.display = 'none'
-           }
-       }
-    </script>
+            function mudouTamanho() {
+                 if (window.innerWidth >= 577) {
+                     itens.style.display = 'block'
+                 } else {
+               itens.style.display = 'none'
+                  }
+                }
+       </script>
 </body>
 </html>

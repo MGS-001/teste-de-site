@@ -1,0 +1,111 @@
+@charset "UTF-8";    /*Versão Mobile*/
+
+@import url('https://fonts.googleapis.com/css2?family=Tillana:wght@400;500;600;700;800&display=swap');
+
+:root{
+    --cor1:#262626;
+    --cor2:#BF3604;
+    --cor3:#D96704;
+    --cor4:#ed9122;
+
+    --fonttitulo:'Tillana';
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cor1);
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+}
+
+#menuham{
+    padding: 5px;
+    color: var(--cor2);
+    font-size: 2.2em; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.382);
+}
+
+#menuham:hover{
+    transition: 0.4s;
+    color: var(--cor4);
+}
+
+header{
+    text-align: center;
+}
+
+#itens{
+    padding: 10px;
+    text-align: center;
+}
+
+#itens a{
+    margin: 10px;
+    color: var(--cor2);
+    font-size: 1.3em;
+    text-decoration: none;
+    font-family:var(--fonttitulo);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.382);
+}
+
+#itens a:hover{
+    transition: 0.4s;
+    color: var(--cor4);
+}
+
+h1{
+    padding: 10px;
+    color: var(--cor2);
+    text-align: center;
+    font-weight: lighter;
+    font-family: var(--fonttitulo);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.382);
+}
+
+#container{
+    overflow-x: auto;
+}
+
+table{
+    width: 100vw;
+    margin: auto;
+    position: relative;
+    border-collapse: collapse;
+}
+
+th{
+    top: -1px;
+    padding: 10px;
+    position: sticky;
+    background-color: grey;
+}
+
+td{
+    padding: 4px;
+}
+
+table td,th{
+    border: 2px solid black;
+}
+
+tbody tr:nth-child(even){
+    background-color: grey;
+}
+
+tbody tr:nth-child(odd){
+    background-color: white;
+}
