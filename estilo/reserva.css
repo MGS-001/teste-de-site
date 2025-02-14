@@ -1,8 +1,6 @@
 @charset "UTF-8";
 /* Versão Mobile*/
 
-
-
 *{
     margin: 0px;
     padding: 0px;
@@ -32,7 +30,7 @@ body{
 #itens{
     width: 100vw;
     text-align: center;
-    font-size: 1.6em;
+    font-size: 1.3em;
     font-family: 'Italianno';
 }
 
