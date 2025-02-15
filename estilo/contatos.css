@@ -1,0 +1,99 @@
+@charset "UTF-8";  /* Versão Mobile*/
+
+@import url('https://fonts.googleapis.com/css2?family=Tillana:wght@400;500;600;700;800&display=swap');
+
+:root{
+    --cor1:#262626;
+    --cor2:#BF3604;
+    --cor3:#D96704;
+    --cor4:#ed9122;
+
+    --fonttitulo:'Tillana';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cor1);
+}
+
+#menuham{
+    text-align: center;
+}
+
+#menuham span{
+    padding: 5px;
+    font-size: 2.1em;
+    color: var(--cor2);
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.414);
+}
+
+#menuham span:hover{
+    transition: 0.5s;
+    color: var(--cor4);
+}
+
+#Menu{
+    padding: 10px;
+    text-align: center;
+}
+
+#Menu a{
+    padding: 10px;
+    font-size: 1.2em;
+    color: var(--cor2);
+    text-decoration: none;
+    font-family: var(--fonttitulo);
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.414);
+}
+
+#Menu a:hover{
+    transition: 0.5s;
+    color: var(--cor4);
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+}
+
+#redesocial{
+    padding: 5px;
+    text-align: center;
+}
+
+#redesocial img{
+    height: 40px;
+    padding: 5px;
+    border-radius: 50px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.192);
+}
+
+#redesocial img:hover{
+    transition: 0.4s;
+    box-shadow: none;
+    transform: translate(0px,5px);
+}
+
+#telefone{
+    top: 90%;
+    left: 50%;
+    width: 310px;
+    height: 630px;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    background-image: url("../imagem/frame-iphone.png");
+}
+
+#telefone iframe{
+    left: 7%;
+    top: 13%;
+    width: 86%;
+    height: 75%;
+    position: relative;
+}

@@ -1,12 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <title>Contatos</title>
+    <link rel="stylesheet" href="estilo/contatos.css">
     <link rel="shortcut icon" href="imagem/lobo.png" type="image/x-icon">
 </head>
-<body>
-    
+<body onresize="mudouTamanho()">
+    <header>
+        <div id="menuham">
+            <span class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        </div>
+        <div id="Menu" onclick="clickMenu()">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="Menu.html">Menu</a>
+                <a href="Chefes.html">Chefs</a>
+                <a href="sobrenos.html">Sobre Nós</a>
+            </nav>
+                </header>
+                <main>
+            <div id="redesocial">
+                 <a href="contatos/home.html" target="tela"><img src="imagem/logo-home.jpg" alt="logo do Home"></a>
+                 <a href="contatos/whatsapp.html" target="tela"><img src="imagem/logo-do-whatsApp.png" alt="logo do WhatsApp"></a>
+                 <a href="contatos/twitter.html" target="tela"><img src="imagem/logo-xp.webp" alt="logo do twitter/X"></a>
+                 <a href="contatos/youtube.html" target="tela"><img src="imagem/logo-youtube.jpg" alt="logo do Youtube"></a>
+                 <a href="contatos/instagram.html" target="tela"><img src="imagem/logo-instagram.jpg" alt="logo do Instagram"></a>
+                 <a href="contatos/facebook.html" target="tela"><img src="imagem/logo-facebook.jpg" alt="logo do Facebook"></a>
+            </div>
+        </div>
+        <section id="telefone">
+            <iframe src="contatos/home.html" name="tela" id="tela" frameborder="0"></iframe>
+        </section>
+    </main>
+    <script>
+        
+        function clickMenu() {
+            if (Menu.style.display == "block") {
+                Menu.style.display = "none"
+            } else{
+                Menu.style.display = "block"
+            }
+        }
+    </script>
 </body>
 </html>
