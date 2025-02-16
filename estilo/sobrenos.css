@@ -45,7 +45,7 @@ header{
 }
 
 nav#itens {
-   padding: 5px;
+   padding: 10px;
    text-align: center;
 }
 
@@ -116,7 +116,7 @@ nav#itens{
 }
 
 nav a{
-   padding: 7px;
+   margin: 10px;
    text-decoration: none;
    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.414);
 }
@@ -136,7 +136,7 @@ h1{
    padding: 23px;
    text-align: center;
    font-family: var(--fonttitulo);
-   text-shadow:2px 2px 4px rgba(0, 0, 0, 0.314);
+   text-shadow:2px 2px 4px rgba(0, 0, 0, 0.414);
 }
 
 p{

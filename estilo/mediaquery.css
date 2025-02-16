@@ -31,6 +31,7 @@
     #menu{
         display: block;
         text-align: right;
+        background-color: #262626bb;
     }
 
     #titulo{ 
@@ -71,8 +72,10 @@
     #formulario input{
         width: 40%;
         border: 0px;
-        padding: 8px;
+        padding: 6px;
         border-radius: 8px;
+        font-size: 1.1em;
+        font-family: var(--fonttitulo);
     }
 
     #formulario label{
@@ -88,7 +91,7 @@
         position: relative;
         border-radius: 10px;
         background-color: #bf3604c7;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.632);
+        text-shadow:2px 2px 4px rgba(0, 0, 0, 0.414);
     }
 
     .botao:hover{

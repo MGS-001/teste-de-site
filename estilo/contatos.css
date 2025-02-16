@@ -45,7 +45,7 @@ body{
 
 #Menu a{
     padding: 10px;
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: var(--cor2);
     text-decoration: none;
     font-family: var(--fonttitulo);
@@ -64,7 +64,7 @@ main{
 
 #redesocial{
     padding: 5px;
-    text-align: center;
+    text-align: center
 }
 
 #redesocial img{
@@ -96,4 +96,34 @@ main{
     width: 86%;
     height: 75%;
     position: relative;
+}
+
+@media screen and (min-width: 577px) {
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+#menuham{
+    display: none;
+}
+
+#Menu {
+    text-align: right;
+}
+
+#redesocial img{
+   
+}
+
+#telefone{
+    top: 65%;
+    left: 50%;
+    width: 310px;
+    height: 630px;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    background-image: url("../imagem/frame-iphone.png");
+}
+    
 }

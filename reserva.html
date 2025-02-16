@@ -22,7 +22,7 @@
         <section id="login">
             <div id="Imagem"></div>
             <div id="formulario">
-               <form action="" method="post">
+               <form action="reserva.php" method="post">
                   <h3>Faça Sua Reserva</h3>
                     <div>
                         <label for="inome"> Nome:
@@ -32,7 +32,7 @@
 
                     <div>
                         <label for="itelefone"> Telefone de Contato:
-                            <input type="tel" name="telefone" id="itelefone" required autocomplete="tel-area-code" placeholder="(xx) xxxxx - xxxx">
+                            <input type="tel" name="telefone" id="itelefone" required autocomplete="tel-area-code" placeholder="(xx) xxxxx - xxxx" pattern= "^\(\d{2}\)\d{4,5}-\d{4}$">
                         </label>
                     </div>
 
